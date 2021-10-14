@@ -16,8 +16,6 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         valorContador = 0;
-
-        // recuperamos el texto en el que escribiremos el valor
         contador = findViewById(R.id.contador);
 
         findViewById(R.id.incrementar).setOnClickListener(view -> {
@@ -36,17 +34,17 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void incrementar() {
-        // TODO implementar
+
         contador.setText(Integer.toString(valorContador+=1));
     }
 
     private void decrementar() {
-        // TODO implementar
+
         contador.setText(Integer.toString(valorContador-=1));
     }
 
     private void resetear() {
-        // TODO implementar
+
         contador.setText(Integer.toString(valorContador=0));
     }
 }
